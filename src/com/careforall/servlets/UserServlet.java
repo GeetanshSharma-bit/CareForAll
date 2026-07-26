@@ -16,9 +16,9 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/api/users")
 public class UserServlet extends HttpServlet {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/care_for_all";
-    private static final String DB_USER = "root";
-    private static final String DB_PASS = "Geetansh@1978"; // Remember to use your actual root password here
+   String dbUrl = System.getenv("DB_URL");
+   String dbUser = System.getenv("DB_USER");
+   String dbPassword = System.getenv("DB_PASSWORD");
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
@@ -32,7 +32,7 @@ public class UserServlet extends HttpServlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS);
+           Connection conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
             
             // Checking if the user exists in the database
             String sql = "SELECT * FROM users WHERE email = ? AND password_hash = ?";

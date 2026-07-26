@@ -1,0 +1,9 @@
+# Ignore compiled Java classes
+*.class
+webapp/WEB-INF/classes/
+
+# IDE and OS files
+.vscode/
+*.log
+*.tmp
+.DS_Store

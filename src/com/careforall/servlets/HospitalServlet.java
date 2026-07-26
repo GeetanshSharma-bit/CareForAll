@@ -16,9 +16,9 @@ import jakarta.servlet.http.HttpServletResponse;
 public class HospitalServlet extends HttpServlet {
 
     // Replace with your MySQL credentials
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/care_for_all";
-    private static final String DB_USER = "root";
-    private static final String DB_PASS = "Geetansh@1978";
+  private static final String DB_URL = "jdbc:mysql://mysql-38e99add-karalgeetansh-7f76.l.aivencloud.com:27407/defaultdb?sslMode=REQUIRED";
+private static final String DB_USER = "avnadmin"; 
+private static final String DB_PASS = "AVNS_o21VSMbiNtCzVCKYD6V"; // Paste your actual revealed password here
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

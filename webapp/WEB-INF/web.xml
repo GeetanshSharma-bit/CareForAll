@@ -5,24 +5,9 @@
          version="6.0"
          metadata-complete="false">
 
-    <!-- Hospital API Servlet Mapping -->
-    <servlet>
-        <servlet-name>HospitalServlet</servlet-name>
-        <servlet-class>com.careforall.servlets.HospitalServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HospitalServlet</servlet-name>
-        <url-pattern>/api/hospitals</url-pattern>
-    </servlet-mapping>
-
-    <!-- User Auth Servlet Mapping -->
-    <servlet>
-        <servlet-name>UserServlet</servlet-name>
-        <servlet-class>com.careforall.servlets.UserServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>UserServlet</servlet-name>
-        <url-pattern>/api/users</url-pattern>
-    </servlet-mapping>
+    <!-- Explicitly set hospitals.html as the default landing page -->
+    <welcome-file-list>
+        <welcome-file>hospitals.html</welcome-file>
+    </welcome-file-list>
 
 </web-app>

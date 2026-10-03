@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. Initialize Map (Sleek CartoDB Theme)
     const map = L.map('map').setView([26.2389, 73.0243], 13);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '© OpenStreetMap, © CARTO'
-    }).addTo(map);
+   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
     let routingControl = null;
     let myLat = 26.2389;

@@ -535,7 +535,7 @@ body {
 /* --- The Hero Section (Background Image) --- */
 .hero-section {
     /* IMPORTANT: Change 'images/bg.jpg' to the exact name of your background image file! */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('../images/bg.jpg'); 
+    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('https://www.shutterstock.com/image-photo/empty-hospital-reception-hall-during-260nw-2440604961.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
